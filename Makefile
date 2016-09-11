@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -mmacosx-version-min=10.4  -Wall -g -framework IOKit -framework CoreFoundation
+CFLAGS = -mmacosx-version-min=10.11  -Wall -g -framework IOKit -framework CoreFoundation
 all: fantune 
 
 fantune: smc.o main.o

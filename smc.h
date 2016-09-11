@@ -88,3 +88,11 @@ typedef struct {
   UInt32Char_t            dataType;
   SMCBytes_t              bytes;
 } SMCVal_t;
+
+void printVal(SMCVal_t val);
+kern_return_t SMCReadKey(UInt32Char_t key, SMCVal_t *val);
+kern_return_t SMCWriteKey(SMCVal_t writeVal);
+kern_return_t SMCOpen(io_connect_t *conn);
+kern_return_t SMCClose(io_connect_t conn);
+
+

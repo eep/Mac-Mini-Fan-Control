@@ -1,3 +1,16 @@
+** This tool has been modified to alter the fan speeds of an Aluminium non-unibody iMac that has had its hard drive replaced **
+
+The modifications by me are
+
+ * Incorporating the IOKit API changes for Intel Macs and OS X versions beyond 10.4 (see https://github.com/lavoiesl/osx-cpu-temp for the updated smc.c / smc.h).
+ * Removal of compiler warnings due to undeclared functions or weird usages of sprintf for no reason (security issues?).
+ * Switching the fan SMC key from F0Mx to F2Mx to take into account that it's not the CPU fan of iMacs that are spinning out of control (different than Mac Mini)
+ * Reformatting the code's indentation and brace style to suit my own preferences.
+
+ Hopefully someone else with an iMac will find it useful.
+
+ ----- Original readme below this line.
+
 This is NOT a generic tool for Mac fan control. It will limit the fan
 maximum speed, which may cause overheating, crashes or damage to the
 computer.
